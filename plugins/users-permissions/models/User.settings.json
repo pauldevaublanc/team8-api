@@ -48,6 +48,61 @@
       "via": "users",
       "plugin": "users-permissions",
       "configurable": false
+    },
+    "games": {
+      "collection": "game",
+      "via": "users"
+    },
+    "friends": {
+      "collection": "user",
+      "via": "friends",
+      "dominant": true,
+      "plugin": "users-permissions"
+    },
+    "picture": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "description": {
+      "default": "",
+      "type": "text"
+    },
+    "age": {
+      "default": "",
+      "type": "integer"
+    },
+    "city": {
+      "default": "",
+      "type": "string"
+    },
+    "position": {
+      "default": "",
+      "type": "enumeration",
+      "enum": [
+        "mj",
+        "ai",
+        "a",
+        "af",
+        "p"
+      ]
+    },
+    "generalGrade": {
+      "default": "",
+      "type": "integer"
+    },
+    "generalLevel": {
+      "default": "",
+      "type": "string"
+    },
+    "fairplayGrade": {
+      "default": "",
+      "type": "decimal"
+    },
+    "mvp": {
+      "default": "",
+      "type": "integer"
     }
   },
   "collectionName": "users-permissions_user"

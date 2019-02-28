@@ -1,0 +1,77 @@
+{
+  "connection": "default",
+  "collectionName": "game",
+  "info": {
+    "name": "game",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "date": {
+      "default": "",
+      "type": "date"
+    },
+    "description": {
+      "default": "",
+      "type": "text"
+    },
+    "users": {
+      "collection": "user",
+      "via": "games",
+      "dominant": true,
+      "plugin": "users-permissions"
+    },
+    "OrganizerName": {
+      "default": "",
+      "type": "string"
+    },
+    "OrganizerPicture": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "availablePlace": {
+      "default": false,
+      "type": "boolean"
+    },
+    "level": {
+      "default": "",
+      "type": "enumeration",
+      "enum": [
+        "rookie",
+        "pro",
+        "expert",
+        "allstar",
+        "halloffame"
+      ]
+    },
+    "weather": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "equipement": {
+      "default": "",
+      "type": "string"
+    },
+    "court": {
+      "model": "court",
+      "via": "games"
+    },
+    "Joueurs par équipe": {
+      "default": "",
+      "type": "enumeration",
+      "enum": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ]
+    }
+  }
+}
