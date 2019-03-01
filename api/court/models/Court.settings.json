@@ -25,13 +25,21 @@
       "default": false,
       "type": "boolean"
     },
-    "grade": {
+    "gradeCourt": {
       "default": "",
       "type": "decimal"
     },
     "games": {
       "collection": "game",
       "via": "court"
+    },
+    "Panneaux": {
+      "default": "",
+      "type": "integer"
+    },
+    "transportStation": {
+      "default": "",
+      "type": "string"
     }
   }
 }

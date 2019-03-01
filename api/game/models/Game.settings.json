@@ -44,8 +44,8 @@
         "rookie",
         "pro",
         "expert",
-        "allstar",
-        "halloffame"
+        "all star",
+        "hall of fame"
       ]
     },
     "weather": {
@@ -62,7 +62,7 @@
       "model": "court",
       "via": "games"
     },
-    "Joueurs par équipe": {
+    "JoueursEquipe": {
       "default": "",
       "type": "enumeration",
       "enum": [
