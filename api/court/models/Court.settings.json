@@ -40,6 +40,12 @@
     "transportStation": {
       "default": "",
       "type": "string"
+    },
+    "courtPicture": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
     }
   }
 }
