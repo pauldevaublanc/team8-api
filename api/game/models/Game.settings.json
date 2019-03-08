@@ -38,7 +38,7 @@
       "type": "boolean"
     },
     "level": {
-      "default": "",
+      "default": "rookie",
       "type": "enumeration",
       "enum": [
         "rookie",
@@ -63,7 +63,7 @@
       "via": "games"
     },
     "JoueursEquipe": {
-      "default": "",
+      "default": "1",
       "type": "enumeration",
       "enum": [
         "1",
