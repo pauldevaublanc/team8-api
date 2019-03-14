@@ -17,10 +17,6 @@
       "default": "",
       "type": "string"
     },
-    "private": {
-      "default": false,
-      "type": "boolean"
-    },
     "free": {
       "default": false,
       "type": "boolean"
@@ -33,7 +29,7 @@
       "collection": "game",
       "via": "court"
     },
-    "Panneaux": {
+    "hoop": {
       "default": "",
       "type": "integer"
     },
@@ -46,6 +42,14 @@
       "via": "related",
       "plugin": "upload",
       "required": false
+    },
+    "postalCode": {
+      "default": "",
+      "type": "string"
+    },
+    "gradeCrowd": {
+      "default": "",
+      "type": "integer"
     }
   }
 }
