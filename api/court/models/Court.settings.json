@@ -37,19 +37,49 @@
       "default": "",
       "type": "string"
     },
-    "courtPicture": {
+    "mainPicture": {
       "model": "file",
       "via": "related",
       "plugin": "upload",
       "required": false
     },
-    "postalCode": {
+    "zipCode": {
       "default": "",
       "type": "string"
     },
     "gradeCrowd": {
       "default": "",
       "type": "integer"
+    },
+    "pictures": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "lng": {
+      "default": "",
+      "type": "float"
+    },
+    "lat": {
+      "default": "",
+      "type": "float"
+    },
+    "nocturnal": {
+      "default": false,
+      "type": "boolean"
+    },
+    "covered": {
+      "default": false,
+      "type": "boolean"
+    },
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "open": {
+      "default": "",
+      "type": "string"
     }
   }
 }
