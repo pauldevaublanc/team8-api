@@ -103,6 +103,10 @@
     "mvp": {
       "default": "",
       "type": "integer"
+    },
+    "hostedGames": {
+      "collection": "game",
+      "via": "host"
     }
   },
   "collectionName": "users-permissions_user"

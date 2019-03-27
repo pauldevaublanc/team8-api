@@ -23,16 +23,6 @@
       "dominant": true,
       "plugin": "users-permissions"
     },
-    "OrganizerName": {
-      "default": "",
-      "type": "string"
-    },
-    "OrganizerPicture": {
-      "model": "file",
-      "via": "related",
-      "plugin": "upload",
-      "required": false
-    },
     "availablePlace": {
       "default": false,
       "type": "boolean"
@@ -48,16 +38,6 @@
         "hall of fame"
       ]
     },
-    "weather": {
-      "model": "file",
-      "via": "related",
-      "plugin": "upload",
-      "required": false
-    },
-    "equipement": {
-      "default": "",
-      "type": "string"
-    },
     "court": {
       "model": "court",
       "via": "games"
@@ -72,6 +52,19 @@
         "4",
         "5"
       ]
+    },
+    "host": {
+      "model": "user",
+      "via": "hostedGames",
+      "plugin": "users-permissions"
+    },
+    "ball": {
+      "default": false,
+      "type": "boolean"
+    },
+    "private": {
+      "default": false,
+      "type": "boolean"
     }
   }
 }
