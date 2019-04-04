@@ -51,7 +51,7 @@
     },
     "games": {
       "collection": "game",
-      "via": "users"
+      "via": "players"
     },
     "friends": {
       "collection": "user",
